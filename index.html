@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Docx to PDF Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Docx to PDF Converter</h1>
+        <div id="upload-box" class="upload-box">
+            <p>Drop your .docx file here or <span id="browse-button">click to upload</span>.</p>
+            <input type="file" id="file-input" accept=".docx" hidden>
+        </div>
+        <div id="metadata" class="metadata"></div>
+        <button id="convert-button" disabled>Convert to PDF</button>
+        <div id="loading" class="loading" hidden>Loading...</div>
+        <div id="download-section" hidden>
+            <a id="download-link" href="#" download>Download PDF</a>
+        </div>
+        <label>
+            <input type="checkbox" id="password-protect">
+            Password Protect PDF
+        </label>
+        <input type="password" id="pdf-password" placeholder="Enter password" hidden>
+        <div class="branding">
+            <p>Instructions: Upload a .docx file to convert it to PDF.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
